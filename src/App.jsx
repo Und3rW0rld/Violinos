@@ -61,7 +61,7 @@ function App() {
 					</div>
 
 					<div className='marco-img'>
-						<img className='image' src="../public/img/violin.png" alt="" />
+						<img className='image' src="./img/violin.png" alt="" />
 					</div>
 				</article>
 			</section>
