@@ -1,19 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Poppins:wght@300;500;700&family=Send+Flowers&display=swap');
+
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: 'Poppins', sans-serif;
-  color: black;
+  color: #000;
 }
 
-img{
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 #root {
   text-align: center;
   width: 100%;
+}
+
+header {
+  background-color: #F6EBDA;
+  display: flex;
+  justify-content: center;
+}
+
+
+.navbar{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero{
@@ -23,19 +33,13 @@ img{
   width: 100%;
 }
 
-.navbar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 122px;
-}
-
 .logo-container{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: .75em;
 }
+
 .img-logo{
   width: 56px;
 }
@@ -44,9 +48,10 @@ img{
   font-family: 'Inter', sans-serif;
   font-family: 'Send Flowers', cursive;
   text-decoration: none;
-  color: black;
+  color: #000;
   font-size: 46px;
 }
+
 .navbar-elements{
   list-style: none;
   display: flex;
@@ -58,7 +63,7 @@ img{
 .navbar-element{
   font-size: 18px;
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 .navbar-element.selected{
@@ -80,7 +85,6 @@ img{
   gap: 2em;
   padding: 0 2em;
   padding: 14px 122px 300px 122px;
-
 }
 
 .content-hero{
@@ -91,7 +95,6 @@ img{
   justify-content: center;
   gap: 3em;
   padding: 0 1em;
-
 }
 
 .slogan{
@@ -100,6 +103,7 @@ img{
   color: #2F2105;
   text-align: left;
 }
+
 .slogan span{
   color: #FF902B;
 }
@@ -120,17 +124,20 @@ img{
 }
 
 .content-hero-links button{
+  cursor: pointer;
   padding: 12px 32px;
   background-color: #2F2105;
-  color: white;
+  color: #fff;
   border-radius: 33px;
   border-style: none;
   font-size: 14px;
   font-weight: 600;
+  transition: all 0.3s;
 }
 
 .content-hero-links button:hover{
   background-color: #FF902B;
+  color: #2F2105;
 }
 
 .content-hero-links a{
@@ -138,6 +145,7 @@ img{
   text-decoration: none;
   font-size: 14px 122px;
   font-weight: bold;
+  transition: all 0.3s;
 }
 
 .content-hero-links a:hover{
@@ -146,7 +154,7 @@ img{
 }
 
 .marco-img{
-  background-color: white;
+  background-color: #fff;
   padding: .8em 1em;
   border-radius: 12px;
   box-shadow: 0px 0px 10px #5f5f5f;
@@ -185,7 +193,7 @@ img{
   justify-content:center;
 }
 
-.servicio{
+.servicio {
   box-shadow: 0px 0px 8px #5f5f5f;
   backdrop-filter: blur(1px);
   display: flex;
@@ -237,9 +245,11 @@ img{
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
