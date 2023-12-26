@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Poppins:wght@300;500;700&family=Send+Flowers&display=swap');
 
-*{
+* {
+  /* box-sizing: border-box; */
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
   color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+span {
+  color: #FF902B;
+  font-weight: bold;
 }
 
 #root {
@@ -19,40 +30,34 @@ header {
 }
 
 
-.navbar{
+.navbar {
   width: 80vw;
+  background-color: #F6EBDA;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.hero{
-  position: relative;
-  background-color: #F6EBDA;
-  height: 100%;
-  width: 100%;
-}
-
-.logo-container{
+.logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: .75em;
 }
 
-.img-logo{
+.img-logo {
   width: 56px;
 }
 
-.logo-text{
-  font-family: 'Inter', sans-serif;
+.logo-text {
   font-family: 'Send Flowers', cursive;
   text-decoration: none;
   color: #000;
   font-size: 46px;
 }
 
-.navbar-elements{
+.navbar-elements {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -60,55 +65,57 @@ header {
   gap: 2em;
 }
 
-.navbar-element{
+.navbar-element {
   font-size: 18px;
   text-decoration: none;
   color: #000;
 }
 
-.navbar-element.selected{
+.navbar-element.selected {
   color: #FF902B;
 }
 
-.navbar-element:hover{
+.navbar-element:hover {
   color: #FF902B;
-} 
-
-.image{
-  object-fit:fill;
 }
 
-.info-violinos{
+.image {
+  object-fit: fill;
+}
+
+.hero {
+  background-color: #F6EBDA;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 2em;
-  padding: 0 2em;
-  padding: 14px 122px 300px 122px;
+  padding-bottom: 410px;
+  padding-top: 20px;
+  /* box-shadow: 0px 5px 20px #F6EBDA; */
 }
 
-.content-hero{
+.info-violinos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.content-hero {
   max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
   gap: 3em;
-  padding: 0 1em;
 }
 
-.slogan{
+.slogan {
   font-size: 48px;
   font-weight: 600;
   color: #2F2105;
   text-align: left;
 }
 
-.slogan span{
-  color: #FF902B;
-}
-
-.hero-descripcion{
+.hero-descripcion {
   max-width: 400px;
   font-size: 18px;
   font-weight: 300;
@@ -116,14 +123,14 @@ header {
   text-align: left;
 }
 
-.content-hero-links{
+.content-hero-links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2em;
 }
 
-.content-hero-links button{
+.content-hero-links button {
   cursor: pointer;
   padding: 12px 32px;
   background-color: #2F2105;
@@ -135,12 +142,12 @@ header {
   transition: all 0.3s;
 }
 
-.content-hero-links button:hover{
+.content-hero-links button:hover {
   background-color: #FF902B;
   color: #2F2105;
 }
 
-.content-hero-links a{
+.content-hero-links a {
   color: #FF902B;
   text-decoration: none;
   font-size: 14px 122px;
@@ -148,12 +155,11 @@ header {
   transition: all 0.3s;
 }
 
-.content-hero-links a:hover{
-  text-decoration: underline;
+.content-hero-links a:hover {
   color: #2F2105;
 }
 
-.marco-img{
+.marco-img {
   background-color: #fff;
   padding: .8em 1em;
   border-radius: 12px;
@@ -161,36 +167,44 @@ header {
   backdrop-filter: blur(5px);
 }
 
-.title-services{
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -340px;
+  text-align: start;
+  gap: 2em;
+  margin-bottom: 50px;
+}
+
+.servicios-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-image: url(./img/rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 90vw;
+}
+
+.title-services {
+  align-self: flex-start;
+  margin-left: 5.5vw;
   font-size: 32px;
   font-weight: 600;
   position: relative;
-  margin-left: 3em;
-  
-}
-.servicios{
-  text-align: start;
-  display: flex;
-  flex-direction: column;
-  padding: 14px;
-  position: absolute;
-  gap: 2em;
-  z-index: 2;
-  width: 95%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 930px;
 }
 
-.content-servicios{
-  align-self: center;
-  margin:0;
-  padding: 0;
+.content-servicios {
   display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   width: 100%;
   gap: 2em;
-  justify-content:center;
 }
 
 .servicio {
@@ -200,40 +214,45 @@ header {
   flex-direction: column;
   gap: 1em;
   text-align: start;
-  padding: 1.5em;
+  padding: 1.3em;
   background-color: #fff;
-  max-width: 280px;
   border: solid 12px rgba(255, 255, 255, 0.4);
   background-clip: padding-box;
   border-radius: 12px;
+  width: 20vw;
+  max-width: 280px;
 }
 
-.servicio h4{
+.servicio h4 {
   font-size: 24px;
   font-weight: 600;
   color: #2F2105;
 }
 
-.servicio img{
-  border-radius: 12px ;
+.servicio img {
+  border-radius: 12px;
 }
 
 .title-services::after {
-  content: ""; /* Se requiere para elementos pseudo ::before o ::after */
+  content: "";
+  /* Se requiere para elementos pseudo ::before o ::after */
   position: absolute;
   left: 80px;
   bottom: 0;
-  width: 70px; /* Ajusta el ancho de la línea según sea necesario */
-  height: 4px; /* Ajusta la altura de la línea según sea necesario */
-  background-color: #FF902B; /* Color de la línea */
+  width: 70px;
+  /* Ajusta el ancho de la línea según sea necesario */
+  height: 4px;
+  /* Ajusta la altura de la línea según sea necesario */
+  background-color: #FF902B;
+  /* Color de la línea */
   border-radius: 50px;
 }
 
-.servicio-descripcion{
+.servicio-descripcion {
   font-size: 16px;
 }
 
-.rectangle{
+.rectangle {
   position: relative;
   top: -70px;
   z-index: 1;
@@ -253,4 +272,3 @@ header {
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
