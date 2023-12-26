@@ -64,18 +64,18 @@ function App() {
           <div className='content-servicios'>
             <div className='servicio'>
               <img src="../public/img/service_1.png" alt="" />
-              <h4 className='servicio-title'>Bodas</h4>
-              <p className='servicio-descripcion'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam.</p>
+              <h4 className='servicio-title'>Música para bodas</h4>
+              <p className='servicio-descripcion'>Da vida a tu boda con nuestra música única y personalizada. Desde la ceremonia hasta la recepción, creamos momentos inolvidables con elegancia y estilo.</p>
             </div>
             <div className='servicio'>
-              <img src="../public/img/ico2.svg" alt="" />
-              <h4 className='servicio-title'>Eventos</h4>
-              <p className='servicio-descripcion'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam.</p>
+              <img src="../public/img/service_2.png" alt="" />
+              <h4 className='servicio-title'>Eventos sociales</h4>
+              <p className='servicio-descripcion'>Transforma tus eventos con nuestra música única. Desde fiestas íntimas hasta grandes reuniones, creamos la atmósfera perfecta para cada celebración.</p>
             </div>
             <div className='servicio'>
-              <img src="../public/img/ico3.svg" alt="" />
-              <h4 className='servicio-title'>Conciertos</h4>
-              <p className='servicio-descripcion'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam.</p>
+              <img src="../public/img/service_3.png" alt="" />
+              <h4 className='servicio-title'>Otros eventos...</h4>
+              <p className='servicio-descripcion'>Potencia tus eventos con nuestra música excepcional. Creamos la banda sonora perfecta para hacerlos inolvidables.</p>
             </div>
           </div>
         </section>

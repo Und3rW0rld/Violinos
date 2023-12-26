@@ -160,20 +160,39 @@ img{
 }
 .servicios{
   display: flex;
-  max-width: max-content;
   flex-direction: column;
   align-items: flex-start;
-  padding: 14px 122px;
+  padding: 14px;
   position: absolute;
+  gap: 2em;
 }
 
 .content-servicios{
   margin:0;
   padding: 0;
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 32px;
+  display: flex;
+  gap: 2em;
+}
+
+.servicio{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: start;
+  padding: 2em;
+  background-color: #fff;
+  max-width: 350px;
+  border: solid 4px rgba(255, 255, 255, 0.4);
+}
+
+.servicio h4{
+  font-size: 24px;
+  font-weight: 600;
+  color: #2F2105;
+}
+
+.servicio img{
+  border-radius: 12px ;
 }
 
 .title::after {
