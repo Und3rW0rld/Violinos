@@ -58,9 +58,9 @@ function App() {
             <img className='image' src="../public/img/violin.png" alt="" />
           </div>
         </section>
-
+        
         <section className='servicios'>
-          <h3 className='title'>Servicios</h3>
+          <h3 className='title-services'>Servicios</h3>
           <div className='content-servicios'>
             <div className='servicio'>
               <img src="../public/img/service_1.png" alt="" />
@@ -80,7 +80,7 @@ function App() {
           </div>
         </section>
       </header>
-      
+      <img className='rectangle' src="../public/img/rectangle.svg" alt="" />
       <main>
         
       </main>
