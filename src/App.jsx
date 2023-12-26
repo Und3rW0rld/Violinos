@@ -30,7 +30,9 @@ function App() {
 				<nav className='navbar'>
 					<div className="logo-container">
 						<img className='img-logo' src="../public/ico.svg" />
-						<h1><a className='logo-text' href="#">Violinos</a></h1>
+						<a href="#">
+							<h1 className='logo-text'>Violinos</h1>
+						</a>
 					</div>
 
 					<div>
@@ -51,7 +53,7 @@ function App() {
 				<article className='info-violinos'>
 					<div className='content-hero'>
 						<h2 className='slogan'>Eleva tu <span>melodía</span> con nosotros</h2>
-						<p className='hero-descripcion'>Violinos es un dúo de violines para eventos ofreciendo un servicio profesional para sus clientes.</p>
+						<p className='hero-descripcion'>Violinos es un dúo de violines para eventos ofreciendo un <span>servicio profesional</span> para sus clientes.</p>
 						<div className='content-hero-links'>
 							<button className='btn-hero-links'>Habla con nosotros</button>
 							<a href="">Nuestras redes</a>
@@ -65,31 +67,30 @@ function App() {
 			</section>
 
 			<section className='servicios'>
-				<h3 className='title-services'>Servicios</h3>
+				<div className='servicios-section'>
+					<h3 className='title-services'>Servicios</h3>
 				
-				<div className='content-servicios'>
-					<div className='servicio'>
-						<img src="../public/img/service_1.png" alt="" />
-						<h4 className='servicio-title'>Música para bodas</h4>
-						<p className='servicio-descripcion'>Da vida a tu boda con nuestra música única y personalizada. Desde la ceremonia hasta la recepción, creamos momentos inolvidables con elegancia y estilo.</p>
-					</div>
+					<div className='content-servicios'>
+						<div className='servicio'>
+							<img src="../public/img/service_1.png" alt="" />
+							<h4 className='servicio-title'>Música para bodas</h4>
+							<p className='servicio-descripcion'>Da vida a tu boda con nuestra música única y personalizada. Desde la ceremonia hasta la recepción, creamos momentos inolvidables con elegancia y estilo.</p>
+						</div>
 
-					<div className='servicio'>
-						<img src="../public/img/service_2.png" alt="" />
-						<h4 className='servicio-title'>Eventos sociales</h4>
-						<p className='servicio-descripcion'>Transforma tus eventos con nuestra música única. Desde fiestas íntimas hasta grandes reuniones, creamos la atmósfera perfecta para cada celebración.</p>
-					</div>
+						<div className='servicio'>
+							<img src="../public/img/service_2.png" alt="" />
+							<h4 className='servicio-title'>Eventos sociales</h4>
+							<p className='servicio-descripcion'>Transforma tus eventos con nuestra música única. Desde fiestas íntimas hasta grandes reuniones, creamos la atmósfera perfecta para cada celebración.</p>
+						</div>
 
-					<div className='servicio'>
-						<img src="../public/img/service_3.png" alt="" />
-						<h4 className='servicio-title'>Otros eventos...</h4>
-						<p className='servicio-descripcion'>Potencia tus eventos con nuestra música excepcional. Creamos la banda sonora perfecta para hacerlos inolvidables.</p>
+						<div className='servicio'>
+							<img src="../public/img/service_3.png" alt="" />
+							<h4 className='servicio-title'>Otros eventos...</h4>
+							<p className='servicio-descripcion'>Potencia tus eventos con nuestra música excepcional. Creamos la banda sonora perfecta para hacerlos inolvidables.</p>
+						</div>
 					</div>
 				</div>
 			</section>
-
-			<img className='rectangle' src="../public/img/rectangle.svg" alt="" />
-
 			<main>
 
 			</main>
