@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Poppins:wght@300;500;700&family=Send+Flowers&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+img{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#root {
+  text-align: center;
+  width: 100%;
+}
+
+.hero{
+  position: relative;
+  background-color: #F6EBDA;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 122px;
+}
+
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .75em;
+}
+.img-logo{
+  width: 56px;
+}
+
+.logo-text{
+  font-family: 'Inter', sans-serif;
+  font-family: 'Send Flowers', cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 46px;
+}
+.navbar-elements{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.navbar-element{
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-element.selected{
+  color: #FF902B;
+}
+
+.navbar-element:hover{
+  color: #FF902B;
+} 
+
+.image{
+  object-fit:fill;
+}
+
+.info-violinos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  padding: 0 2em;
+  padding: 14px 122px 300px 122px;
+
+}
+
+.content-hero{
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 3em;
+  padding: 0 1em;
+
+}
+
+.slogan{
+  font-size: 48px;
+  font-weight: 600;
+  color: #2F2105;
+  text-align: left;
+}
+.slogan span{
+  color: #FF902B;
+}
+
+.hero-descripcion{
+  max-width: 400px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #7E7D7A;
+  text-align: left;
+}
+
+.content-hero-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.content-hero-links button{
+  padding: 12px 32px;
+  background-color: #2F2105;
+  color: white;
+  border-radius: 33px;
+  border-style: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.content-hero-links button:hover{
+  background-color: #FF902B;
+}
+
+.content-hero-links a{
+  color: #FF902B;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.content-hero-links a:hover{
+  text-decoration: underline;
+  color: #2F2105;
+}
+
+.marco-img{
+  background-color: white;
+  padding: .8em 1em;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px #5f5f5f;
+  backdrop-filter: blur(5px);
+}
+
+.title{
+  font-size: 32px;
+  font-weight: 600;
+  position: relative;
+}
+.servicios{
+  display: flex;
+  max-width: max-content;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 14px 122px;
+  position: absolute;
+}
+
+.content-servicios{
+  margin:0;
+  padding: 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+}
+
+.title::after {
+  content: ""; /* Se requiere para elementos pseudo ::before o ::after */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70px; /* Ajusta el ancho de la línea según sea necesario */
+  height: 4px; /* Ajusta la altura de la línea según sea necesario */
+  background-color: #FF902B; /* Color de la línea */
+  border-radius: 50px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
