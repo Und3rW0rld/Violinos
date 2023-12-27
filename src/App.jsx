@@ -55,13 +55,20 @@ function App() {
 						<h2 className='slogan'>Eleva tu <span>melodía</span> con nosotros</h2>
 						<p className='hero-descripcion'>Violinos es un dúo de violines para eventos ofreciendo un <span>servicio profesional</span> para sus clientes.</p>
 						<div className='content-hero-links'>
-							<button className='btn-hero-links'>Habla con nosotros</button>
-							<a href="">Nuestras redes</a>
+							<div className="hero-link-about">
+								<p>Habla con nosotros</p>
+							</div>
+
+							<a href="#">
+								<div className="hero-link-redes">
+									<p>Nuestras redes</p>
+								</div>
+							</a>
 						</div>
 					</div>
 
 					<div className='marco-img'>
-						<img className='image' src="./img/violin.png" alt="" />
+						<img className='image' src="./img/violin.png" alt="Imagen Violin" />
 					</div>
 				</article>
 			</section>
@@ -69,7 +76,7 @@ function App() {
 			<section className='servicios'>
 				<div className='servicios-section'>
 					<h3 className='title-services'>Servicios</h3>
-				
+
 					<div className='content-servicios'>
 						<div className='servicio'>
 							<img src="./img/service_1.png" alt="" />
