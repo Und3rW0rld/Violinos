@@ -5,6 +5,9 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
+}
+
+body {
   color: #000;
 }
 
@@ -90,13 +93,13 @@ header {
   align-items: center;
   padding-bottom: 410px;
   padding-top: 20px;
-  /* box-shadow: 0px 5px 20px #F6EBDA; */
 }
 
 .info-violinos {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2em;
   width: 80vw;
 }
 
@@ -130,7 +133,7 @@ header {
   gap: 2em;
 }
 
-.content-hero-links button {
+.hero-link-about {
   cursor: pointer;
   padding: 12px 32px;
   background-color: #2F2105;
@@ -142,12 +145,12 @@ header {
   transition: all 0.3s;
 }
 
-.content-hero-links button:hover {
+.hero-link-about:hover {
   background-color: #FF902B;
   color: #2F2105;
 }
 
-.content-hero-links a {
+.hero-link-redes {
   color: #FF902B;
   text-decoration: none;
   font-size: 14px 122px;
@@ -155,7 +158,7 @@ header {
   transition: all 0.3s;
 }
 
-.content-hero-links a:hover {
+.hero-link-redes:hover {
   color: #2F2105;
 }
 
@@ -165,6 +168,10 @@ header {
   border-radius: 12px;
   box-shadow: 0px 0px 10px #5f5f5f;
   backdrop-filter: blur(5px);
+}
+
+.marco-img img {
+  width: 377px;
 }
 
 .servicios {
@@ -234,17 +241,13 @@ header {
 }
 
 .title-services::after {
-  content: "";
-  /* Se requiere para elementos pseudo ::before o ::after */
+  content: ""; /* Se requiere para elementos pseudo ::before o ::after */
   position: absolute;
   left: 80px;
   bottom: 0;
-  width: 70px;
-  /* Ajusta el ancho de la línea según sea necesario */
-  height: 4px;
-  /* Ajusta la altura de la línea según sea necesario */
-  background-color: #FF902B;
-  /* Color de la línea */
+  width: 70px; /* Ajusta el ancho de la línea según sea necesario */
+  height: 4px; /* Ajusta la altura de la línea según sea necesario */
+  background-color: #FF902B; /* Color de la línea */
   border-radius: 50px;
 }
 
@@ -252,23 +255,147 @@ header {
   font-size: 16px;
 }
 
-.rectangle {
-  position: relative;
-  top: -70px;
-  z-index: 1;
+/* --- --- --- --- RESPONSIVE --- --- --- --- */
+
+@media (max-width: 945px) {
+  .navbar {
+    width: 90vw;
+  }
+
+  .img-logo {
+    width: 40px;
+  }
+
+  .logo-text {
+    font-size: 40px;
+  }
+
+  .navbar-elements a {
+    font-size: 16px;
+  }
+
+  .slogan {
+    font-size: 30px;
+  }
+
+  .hero-descripcion {
+    font-size: 16px;
+  }
+
+  .hero-link-about {
+    padding: 12px 15px;
+  }
+
+  .marco-img img {
+    width: 250px;
+  }
+
+  .servicio h4 {
+    font-size: 20px;
+  }
+
+  .servicio-descripcion {
+    font-size: 14px;
+  }
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
+@media (max-width: 590px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5em;
+  }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
+  .logo-text {
+    font-size: 35px;
+  }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  .navbar-elements {
+    gap: 1em;
+  }
+
+  .info-violinos {
+    flex-direction: column;
+  }
+
+  .content-hero {
+    gap: 1em;
+    align-items: center;
+  }
+
+  .slogan {
+    text-align: unset;
+  }
+
+  .hero {
+    padding-bottom: 0px;
+  }
+
+  .hero-descripcion {
+    text-align: unset;
+  }
+
+  .content-hero-links {
+    gap: 1em;
+  }
+  
+  .hero-link-about {
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+
+  .marco-img {
+    margin-bottom: 20px;
+    border-radius: 9px;
+  }
+
+  .marco-img img {
+    width: 150px;
+  }
+
+  .title-services {
+    font-size: 30px;
+  }
+
+  .title-services::after {
+    left: 50%;
+  }
+
+  .content-servicios {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .title-services {
+    align-self: unset;
+  }
+
+  .servicios {
+    margin-top: 20px;
+  }
+
+  .servicios-section {
+    background-color: #f6d6a8;
+    padding: 10px 0px;
+    border-radius: 10px;
+  }
+
+  .servicio {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    padding: 20px 10px;
+    border-radius: 9px;
+  }
+
+  .servicio img {
+    object-fit: cover;
+    width: 200px;
+    max-height: 100px;
+  }
+
+  .servicio-descripcion {
+    font-size: 12px;
+  }
 }
