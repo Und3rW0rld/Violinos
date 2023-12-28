@@ -99,8 +99,48 @@ function App() {
 				</div>
 			</section>
 			<main>
-
+				<section className='nosotros'>
+					<article>
+					<div className='marco-img img-nosotros'>
+						<img src="./img/nosotros.png" alt="" />
+					</div>
+					<div className='nosotros-content'>
+						<h3 className='title-nosotros'>Nosotros</h3>
+						<h4>
+						Brindamos un servicio de calidad
+						</h4>
+						<p className='nosotros-descripcion'>Somos dos violinistas con varios años de experiencia tocando en orquestas y en diversos eventos con clientes muy satisfechos por nuestros servicios.</p>
+					</div>
+					</article>
+				</section>
+				<section className='team'>
+					<article className='team-section juanjo-section'>
+						<div className='marco-img marco-rosa'>
+							<img src="./img/juanjo.png" alt="" />
+						</div>
+						<div className='team-content'>
+							<h3 className='team-juanjo'>Juan José Vélez</h3>
+							<p className='team-descripcion'>Violinista y arreglista de la Universidad de Antioquia, con una sólida trayectoria de 11 años de experiencia. Ha formado parte de destacadas agrupaciones en Colombia, entre las cuales se incluyen la red de escuelas de música de Medellín, la orquesta de la universidad de Antioquia, y la orquesta Joven Sinfónica de Colombia.
+							<br />
+							<br />
+							A lo largo de su carrera, ha cultivado una profunda conexión con la música por elevar cada interpretación comprometido con la excelencia artística y la entrega de actuaciones memorables. Su amplia experiencia y versatilidad le permiten adaptarse a diversos estilos musicales, brindando un toque distintivo a cada evento en el que participe.</p>
+						</div>
+					</article>
+					<article className='team-section'>
+						<div className='team-content'>
+							<h3 className='team-juanjo'>Santiago Acevedo</h3>
+							<p className='team-descripcion'>
+Violinista con más de 10 años de experiencia, destacándose en orquestas de prestigio como la Joven Sinfónica de Colombia y la orquesta principal de la Fundación Amadeus. <br /><br /> Su versatilidad se refleja en su contribución a la Escuela de Música de Bello y su participación en diversos grupos musicales. Además, ofrece interpretaciones individuales impactantes en una variedad de eventos, consolidándose como un destacado músico en la escena local.</p>
+						</div>
+						<div className='marco-img marco-rosa'>
+							<img src="./img/santi.png" alt="" />
+						</div>
+					</article>
+				</section>
 			</main>
+			<footer>
+				
+			</footer>
 		</>
 	)
 }
