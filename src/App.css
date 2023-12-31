@@ -323,6 +323,7 @@ h3::after {
   display: flex;
   width: 80vw;
   justify-content: space-between;
+  gap: 2em;
 }
 .team-juanjo::after{
   width: 100%;
@@ -381,6 +382,56 @@ h3::after {
 
   .servicio-descripcion {
     font-size: 14px;
+  }
+
+  .team-content h3{
+    font-size: 26px;
+  }
+
+  .team-content p{
+    font-size: 14px;
+  }
+  .nosotros article{
+    text-align: center;
+    flex-direction: column-reverse;
+    height: 100%;
+    margin-top: 0;
+  }
+  .nosotros article h3{
+    align-self: center;
+  }
+  .nosotros article h3::after{
+    width: 100%;
+  }
+  .img-nosotros {
+    margin: 0;
+  }
+  .img-nosotros img{
+    width: 240px;
+  }
+  .nosotros{
+    height: auto;
+    padding: 2em 0;
+  }
+  .team{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  .team-section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+  .team-content{
+    text-align: center;
+  }
+  .team-juanjo{
+    align-self: center;
+  }
+  .juanjo-section{
+    flex-direction: column-reverse;
   }
 }
 
@@ -483,4 +534,5 @@ h3::after {
   .servicio-descripcion {
     font-size: 12px;
   }
+  
 }

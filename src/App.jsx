@@ -130,7 +130,7 @@ function App() {
 						<div className='team-content'>
 							<h3 className='team-juanjo'>Santiago Acevedo</h3>
 							<p className='team-descripcion'>
-Violinista con más de 10 años de experiencia, destacándose en orquestas de prestigio como la Joven Sinfónica de Colombia y la orquesta principal de la Fundación Amadeus. <br /><br /> Su versatilidad se refleja en su contribución a la Escuela de Música de Bello y su participación en diversos grupos musicales. Además, ofrece interpretaciones individuales impactantes en una variedad de eventos, consolidándose como un destacado músico en la escena local.</p>
+Violinista con más de 10 años de experiencia, destacándose en orquestas de prestigio como la Joven Sinfónica de Colombia, la orquesta Sinfónica de Antioquia y la orquesta principal de la Fundación Amadeus. <br /><br /> Su versatilidad se refleja en su contribución a la Escuela de Música de Bello y su participación en diversos grupos musicales. Además, ofrece interpretaciones individuales impactantes en una variedad de eventos, consolidándose como un destacado músico en la escena local.</p>
 						</div>
 						<div className='marco-img marco-rosa'>
 							<img src="./img/santi.png" alt="" />
